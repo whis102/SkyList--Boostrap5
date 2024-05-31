@@ -3,5 +3,12 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
 }
+
+/* .divider {
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+  content: "";
+  background-color: #2f2f2f;
+} */
