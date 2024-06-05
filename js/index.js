@@ -42,3 +42,15 @@ function addTask() {
     listContainer.appendChild(li);
   }
 }
+
+const navItems = document.querySelectorAll(".nav-item");
+
+navItems.forEach((navItem) => {
+  navItem.addEventListener("mouseover", function () {
+    this.classList.add("active"); // Add "active" class on mouseover
+  });
+
+  navItem.addEventListener("mouseout", function () {
+    this.classList.remove("active"); // Remove "active" class on mouseout
+  });
+});
