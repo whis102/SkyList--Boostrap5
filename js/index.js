@@ -65,26 +65,22 @@ if (currentPageLink) {
   currentPageLink.classList.add("current-page");
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const themeToggleBtn = document.getElementById("themeToggleBtn");
-  const themeStylesheet = document.getElementById("themeStylesheet");
-  const darkThemeStylesheet = document.getElementById("darkThemeStylesheet");
+const themeToggleBtn = document.getElementById("themeToggleBtn");
+// const savedTheme = localStorage.getItem("theme");
 
-  // Check for saved user theme preference
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
-    darkThemeStylesheet.removeAttribute("disabled");
+themeToggleBtn.addEventListener("click", function () {
+  document.body.classList.toggle('dark-theme'); // Toggle dark theme class
+
+  // Update local storage based on current class presence
+  if (document.body.classList.contains('dark-theme')) {
+    localStorage.setItem("theme", "dark");
   } else {
-    darkThemeStylesheet.setAttribute("disabled", "true");
+    localStorage.setItem("theme", "light");
   }
-
-  themeToggleBtn.addEventListener("click", function () {
-    if (darkThemeStylesheet.disabled) {
-      darkThemeStylesheet.removeAttribute("disabled");
-      localStorage.setItem("theme", "dark");
-    } else {
-      darkThemeStylesheet.setAttribute("disabled", "true");
-      localStorage.setItem("theme", "light");
-    }
-  });
 });
+
+
+// // Check saved theme on page load and apply
+// if (savedTheme === "dark") {
+//   document.body.classList.add('dark-theme');
+// }
