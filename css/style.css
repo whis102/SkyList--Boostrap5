@@ -6,3 +6,7 @@ body {
 .slidebar {
   height: 100vh !important;
 }
+
+.nav-link {
+  transition: all 0.2s;
+}

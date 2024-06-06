@@ -43,7 +43,8 @@ function addTask() {
   }
 }
 
-const navItems = document.querySelectorAll(".nav-item");
+// Hover
+const navItems = document.querySelectorAll(".nav-link");
 
 navItems.forEach((navItem) => {
   navItem.addEventListener("mouseover", function () {
