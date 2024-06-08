@@ -13,7 +13,7 @@
 
     <body>
         <div class="container-fluid">
-            <div class="row mt-2">
+            <div class="row">
                 <div id="slidebar" class="col-md-3 bg-light">
                     <button id="themeToggleBtn" class="btn mt-2">
                         <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cloud-sun-fill"
@@ -97,22 +97,94 @@
                     </div>
                 </div>
 
-                <div class="col-md-9">
+                <div class="col-md-9 mt-3">
                     <div class="p-3">
                         <h4>Profile</h4>
 
                         <div class="user-box d-flex justify-content-between mt-4">
-
                             <div class="user-box__1 d-flex">
                                 <img src="./assets/avatar.png" class="border border-dark rounded-circle me-2 object-fit m-4" width="100" height="100"
                                     alt="user-avatar">
-
                                 <div class="user-info m-4">
                                     <h5>Nguyen Chi Cong</h5>
 
-                                    <div class="user-info__details">
+                                    <div class="user-info__details d-flex flex-column mt-3">
                                         <span>chicongnguyen.dev@gmail.com</span>
                                         <span>Co Bi, Gia Lam, HN</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="user-box__2">
+                                <button type="button" class="btn btn-primary m-4">
+                                    Edit
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                        <path fill-rule="evenodd"
+                                            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="user-box d-flex justify-content-between mt-4">
+                            <div class="user-box__1 m-4">
+                                <h5>Personal Information</h5>
+
+                                <div class="row mt-4 ms-4">
+                                    <div class="col-md-6">
+                                        <h6>First Name</h6>
+                                        <p>Nguyen</p>
+
+                                        <h6>Email address</h6>
+                                        <p>chicongnguyen.dev@gmail.com</p>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <h6>Last Name</h6>
+                                        <p>Cong</p>
+
+                                        <h6>Phone</h6>
+                                        <p>0868936515</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="user-box__2">
+                                <button type="button" class="btn btn-primary m-4">
+                                    Edit
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                        <path fill-rule="evenodd"
+                                            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="user-box d-flex justify-content-between mt-4">
+                            <div class="user-box__1 m-4">
+                                <h5>Address</h5>
+
+                                <div class="row mt-4 ms-4">
+                                    <div class="col-md-6">
+                                        <h6>Country</h6>
+                                        <p>Vietnam</p>
+
+                                        <h6>District/Ward</h6>
+                                        <p>Co Bi, Gia Lam</p>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <h6>City/State</h6>
+                                        <p>Thanh Xuan, Hanoi</p>
+
+                                        <h6>Postal Code</h6>
+                                        <p>100000</p>
                                     </div>
                                 </div>
                             </div>
