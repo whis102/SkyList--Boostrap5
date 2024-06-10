@@ -1,3 +1,72 @@
 .search-bar {
+    width: 280px;
+}
+
+.search-bar button {
+    border: none;
     width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    color: #818186;
+}
+
+.calendar{
+    max-width: 400px;
+    margin: auto;
+    background-color: #e40b0b;
+}
+
+.calendar .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar .days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendar .day {
+    width: calc(100% / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 1px solid #ddd;
+}
+
+
+/* Process */
+/* .process {
+    background-color: black;
+} */
+
+.process-box{
+    width: 300px;
+    height: 100px;
+}
+
+.process-item {
+    width: 3px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.cl-1{
+    background-color: #2da7a6;
+}
+
+.cl-2{
+    background-color: #ffc44a;
+}
+
+.cl-3{
+    background-color: #9b7ecc;
+}
+
+.cl-4{
+    background-color: #ff947e;
 }
