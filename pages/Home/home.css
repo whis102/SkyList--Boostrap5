@@ -2,6 +2,11 @@
     width: 280px;
 }
 
+.box {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
 .search-bar button {
     border: none;
     width: 100%;
@@ -12,12 +17,10 @@
     color: #818186;
 }
 
+/* Calendar */
 .calendar{
     max-width: 500px;
     padding: 24px;
-    margin: 20px;
-    border-radius: 10px;
-    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,9 +48,6 @@
 
 /* Process */
 .process {
-    background-color: white;
-    border-radius: 10px;
-    margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,3 +83,10 @@
 .cl-4{
     background-color: #ff947e;
 }
+
+/* Daily */
+/* .daily-tasks {
+}
+
+.daily-process {
+} */
