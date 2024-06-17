@@ -21,11 +21,10 @@ setInterval(updateTime, 1000);
 // add Task
 const listContainer = document.getElementById("list-container");
 const inputBox = document.getElementById("input-box");
+const addTask = document.getElementById( 'btn-add' );
 
-function addTask() {
-  if (inputBox.value === "") {
-    alert("You should write down something");
-  } else {
+function addTaskToList() {
+  if (inputBox.value.trim() !== "") {
     let li = document.createElement("li");
     li.classList.add("list-group-item");
 
@@ -40,5 +39,26 @@ function addTask() {
     li.appendChild(text);
 
     listContainer.appendChild(li);
+
+    inputBox.value = "";
+
+   checkbox.addEventListener('click', function() {
+      if (this.checked) {
+        this.setAttribute('checked', 'checked');
+        this.setAttribute('disabled', 'disabled');
+      }
+    });
+  } else {
+    alert("You should write down something");
   }
 }
+
+document.body.addEventListener('keypress', (e) => {
+  if (e.key == 'Enter') {
+    addTaskToList();
+  }
+});
+
+addTask.addEventListener('click', () => {
+  addTaskToList();
+});
